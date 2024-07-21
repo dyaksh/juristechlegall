@@ -36,7 +36,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $message .= "Immediate Joining: $immediate_joining\n";
     $message .= "Ready for In-Office Internship: $in_office_internship\n";
     
-    $to = "info@juristechlegal.com";
+    $to = "yakshdarji2@gmail.com";
 
     // Create a boundary for the email
     $boundary = md5(time());
