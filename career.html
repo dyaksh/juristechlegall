@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- 
+    - primary meta tags
+  -->
+  <title>Juristechlegal</title>
+  <meta name="title" content="Juristechlegal">
+  <meta name="description" content="This is a Lawyer firm Website">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon-removebg.png" type="image/svg+xml">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap" rel="stylesheet">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <style>
+     /* Style the form header */
+        h1 {
+            text-align: center;
+            color: white;
+        }
+
+        /* Style the form labels and radio button labels */
+        label, input[type="radio"] + label {
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        /* Style the text input fields with lower padding */
+        input[type="text"],
+        input[type="date"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="file"],
+        input[type="number"],
+        select {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 10px;
+            font-size: 16px;
+            background-color: #444;
+            color: white;
+            border: none;
+        }
+
+        
+        /* Style the select dropdown */
+        select {
+            background-color: #444;
+            color: white;
+        }
+
+        /* Style the submit button */
+        input[type="submit"] {
+            background-color: white;
+            color: black;
+            padding: 23px 22px;
+            border: none;
+            border-radius: 0px;
+            cursor: pointer;
+            font-size: 18px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        /* Style the submit button on hover */
+        input[type="submit"]:hover {
+            background-color: #ddd;
+        }
+        container{
+            padding:10vh;
+        }
+
+        /* Add some spacing between form elements 
+        form > * {
+            margin-bottom: 15px;
+        }
+        
+
+        Style for the separator 
+        .separator {
+            border-top: 1px solid #ccc;
+            margin-top: 15px;
+            margin-bottom: 20px;
+        }*/
+        .form-left,
+.form-right { padding: 20px 40px 40px; }
+        
+      body {
+  background-color: var(--eerie-black-1);
+  color: var(--white);
+  font-family: var(--fontFamily-dm_sans);
+  font-size: var(--fontSize-body-4);
+  font-weight: var(--weight-regular);
+  line-height: var(--lineHeight-5);
+  overflow: hidden;
+  height: auto;
+}
+.reservation-form {
+    display: grid;
+    grid-template-columns: 1fr 0fr;
+  }
+
+  </style>
+</head>
+<body id="top">
+
+  <!-- 
+    - #PRELOADER
+  -->
+
+  <div class="preload" data-preaload>
+    <div class="circle"></div>
+<img src="./logo2.png"  width="75%" alt="logo">
+  </div>
+  <!-- 
+    - #TOP BAR
+  -->
+  <div class="topbar">
+    <div class="container">
+
+      <address class="topbar-item">
+        <div class="icon">
+          <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">
+          Impress, 1st Floor, 111-A Currinji Compund, Near Jagruti Stationery, Mahatma Gandhi Road, Mumbai-400001
+        </span>
+      </address>
+
+      <div class="separator"></div>
+
+      <div class="topbar-item item-2">
+        <div class="icon">
+          <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">Daily : 9.00 am to 8.30 pm</span>
+      </div>
+
+      <a href="tel:2249767722" class="topbar-item link">
+        <div class="icon">
+          <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">22 4976 7722</span>
+      </a>
+
+      <div class="separator"></div>
+
+      <a href="mailto:info@juristechlegal.com" class="topbar-item link">
+        <div class="icon">
+          <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">info@juristechlegal.com</span>
+      </a>
+
+    </div>
+  </div>
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="https://juristechlegal.com" class="logo">
+        <img src="./logo2.png" width="160" height="50" alt="Juristechlegal - Home">
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <button class="close-btn" aria-label="close menu" data-nav-toggler>
+          <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+        <a href="www.juristechlegal.com" class="logo">
+          <img src="./logo2.png" width="190" height="100" alt="Juristechlegal - Home">
+        </a>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="./index.html#home" class="navbar-link hover-underline ">
+              <div class="separator"></div>
+
+              <span class="span">Home</span>
+            </a>
+          </li>
+          <li class="navbar-item">
+            <a href="./index.html#about" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">About </span>
+            </a>
+            
+          </li>
+
+          <li class="navbar-item">
+            <a href="./index.html#practice" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">Pratice Areas</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="./index.html#team" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">Team</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="./career.html" class="navbar-link hover-underline active">
+              <div class="separator"></div>
+
+              <span class="span">Career</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="./index.html#blog" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">Blog</span>
+            </a>
+          </li>
+
+        </ul>
+
+        <div class="text-center">
+          <p class="headline-1 navbar-title">Visit Us</p>
+
+          <address class="body-4">
+            Impress, 1st Floor, 111-A Currinji Compund, Near Jagruti Stationery, Mahatma Gandhi Road, Mumbai-400001
+          </address>
+
+          <p class="body-4 navbar-text">Open: 9.00 am to 8.30 pm</p>
+
+          <a href="mailto:info@juristechlegal.com" class="body-4 sidebar-link">info@juristechlegal.com</a>
+
+          <div class="separator"></div>
+
+          <p class="contact-label">Contact Request</p>
+
+          <a href="tel:2249767722" class="body-1 contact-number hover-underline">
+            22 4976 7722
+          </a>
+        </div>
+
+      </nav>
+
+      <a href="./index.html#contact" class="btn btn-secondary">
+        <span class="text text-1">Find A Lawyer</span>
+
+        <span class="text text-2" aria-hidden="true">Find A Lawyer</span>
+      </a>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+        <span class="line line-3"></span>
+      </button>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #CONTACT
+      -->
+
+      <section class="section testi text-center "
+       aria-label="testimonials" >
+        <div class="container">
+          <div class="profile">
+          </div>
+        </div>
+      </section>
+
+      <section class="#contact" id="contact">
+        <div class="container">
+
+          <div class="form reservation-form bg-black-10">
+
+        
+        <form action="process_form.php" class="form-right" method="POST" enctype="multipart/form-data">
+    <h2 class="headline-1 text-center">Career
+    <p class="label-2 section-subtitle"> </p></h2>
+    <p class="form-text text-center">
+        Come work with us and achieve greatness.
+    </p>
+
+    <div class="input-wrapper">
+        <input type="text" name="full_name" placeholder="Your Name" autocomplete="off" class="input-field" required><br>
+        <input type="email" name="email" placeholder="Email Address" autocomplete="off" class="input-field" required><br>
+        <input type="tel" name="phone" placeholder="Phone Number" autocomplete="off" class="input-field" required><br>
+        <input type="text" name="address" placeholder="Address" autocomplete="off" class="input-field" required><br>
+        <input type="text" name="college" placeholder="College/University" autocomplete="off" class="input-field" required><br>
+        
+        <label for="duration">Duration of Course:</label>
+        <select id="duration" name="duration" required>
+            <option value="3">3 Years</option>
+            <option value="5">5 Years</option>
+        </select>
+        <br>
+        
+        <label for="looking_for">Are you looking for an internship or an associate position?</label>
+        <select id="looking_for" name="looking_for" required>
+            <option value="internship">Internship</option>
+            <option value="associate">Associate</option>
+        </select><br>
+        
+        
+        <label for="year">Year of Graduation:</label>
+        <input type="number" id="year" name="year" min="1900" max="2099" step="1" required><br>
+        
+        <label>Internship Period:</label><br>
+        
+        <label for="start_date">Start Date:</label>
+        <input type="date" id="start_date" name="start_date" required><br>
+        
+        <label for="end_date">End Date:</label>
+        <input type="date" id="end_date" name="end_date" required><br>
+        
+        <label for="immediate_joining">Can you join immediately?</label>
+        <select id="immediate_joining" name="immediate_joining" required>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select><br>
+        
+        <label for="ready">Ready for In-Office Internship from 10:30 AM to 6:30 PM?</label>
+        <select id="ready" name="ready" required>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select><br>
+        
+        <label for="resume">Upload Resume:</label>
+        <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required><br>
+        
+        <label for="picture">Upload Your Picture:</label>
+        <input type="file" id="picture" name="picture" accept="image/*" required><br><br>
+
+        <button type="submit" class="btn btn-secondary" align="center">
+            <span class="text text-1">Submit</span>
+            <span class="text text-2" aria-hidden="true">Submit</span>
+        </button>
+    </div>
+</form>
+        </div>
+          </div>
+        </div>
+      </section>
+ 
+    </article>
+  </main>
+<script>
+   document.addEventListener("DOMContentLoaded", function () {
+    var form = document.querySelector("form");
+
+    form.addEventListener("submit", function (e) {
+        e.preventDefault(); // Prevent the default form submission
+
+        var emailInput = document.querySelector('input[name="email"]');
+        var email = emailInput.value;
+
+        // Regular expression pattern for email validation
+        var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+
+        // Check if the email matches the pattern
+        if (!emailPattern.test(email)) {
+            alert("Please enter a valid email address.");
+            emailInput.value = ""; // Clear the input field
+            return;
+        }
+
+        // Continue with form submission if the email is valid
+        var phoneNumberInput = document.querySelector('input[name="phone"]');
+        var phoneNumber = phoneNumberInput.value;
+
+        // Remove any non-digit characters (e.g., spaces, dashes)
+        phoneNumber = phoneNumber.replace(/\D/g, '');
+
+        // Check if the phone number has exactly 10 digits
+        if (phoneNumber.length !== 10) {
+            alert("Phone number should be exactly 10 digits.");
+            phoneNumberInput.value = ""; // Clear the input field
+            return;
+        }
+
+        // Continue with form submission if the email, phone number, and start date are valid
+        var startDateInput = document.querySelector('input[name="start_date"]');
+        var currentDate = new Date();
+        currentDate.setHours(0, 0, 0, 0); // Set current time to midnight
+        var enteredDate = new Date(startDateInput.value);
+
+        // Check if the entered date is at least one day in the future
+        currentDate.setDate(currentDate.getDate() + 1); // Advance current date by one day
+        if (enteredDate < currentDate) {
+            alert("Start date must be at least one day in the future.");
+            startDateInput.value = ""; // Clear the input field
+            return;
+        }
+
+        // Continue with form submission if everything is valid
+        var formData = new FormData(form);
+
+        fetch("process_form.php", {
+            method: "POST",
+            body: formData
+        })
+        .then(response => response.json())
+        .then(data => {
+            alert(data.message); 
+            if (data.redirect) {
+            
+                form.reset();
+                window.location.href = "juristechlegal.com";
+            }
+        })
+        .catch(error => {
+            console.error("Error:", error);
+        });
+    });
+});
+
+</script>
+
+
+
+  
+
+  <footer class="footer section has-bg-image text-center">
+   
+    
+
+      <div class="footer-bottom">
+
+        <p class="copyright" style="text-align: center;">
+          &copy; 2023 Juristechlegal. All Rights Reserved</p>
+
+      </div>
+
+    
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn active" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
