@@ -22,7 +22,7 @@ if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
     $messageBody .= "Message:\n$message";
 
     // Replace with your own email address
-    $to = "info@juristechlegal.com";
+    $to = "yakshdarji2@gmail.com";
 
     // Send the email
     $headers = "From: Juristechlegal <noreply@example.com>";
